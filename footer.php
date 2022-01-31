@@ -28,6 +28,8 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php the_field( 'scripts_footer', 'option' ); ?>
+
 <?php wp_footer(); ?>
 
 </body>

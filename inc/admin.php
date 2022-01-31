@@ -68,6 +68,7 @@ add_filter('contextual_help_list','contextual_help_list_remove');
  */
 function remove_admin_menus() {
   remove_menu_page( 'edit-comments.php' );
+  remove_menu_page( 'edit.php' );
 }
 add_action( 'admin_menu', 'remove_admin_menus' );
 

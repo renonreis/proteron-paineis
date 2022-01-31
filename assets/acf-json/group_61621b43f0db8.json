@@ -1,0 +1,44 @@
+{
+    "key": "group_61621b43f0db8",
+    "title": "Cabeçalho",
+    "fields": [
+        {
+            "key": "field_61b94db8ed8be",
+            "label": "Url da Loja",
+            "name": "url_shop",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/blog.laveniacosmeticos.com.br\/category\/categoria-1\/",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "rodape_template"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1639534040
+}
