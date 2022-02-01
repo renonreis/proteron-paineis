@@ -28,37 +28,57 @@
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'proteron-paineis' ); ?></a>
+	<header id="masthead" class="header">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$proteron_paineis_description = get_bloginfo( 'description', 'display' );
-			if ( $proteron_paineis_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $proteron_paineis_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+		<div class="container-fluid g-0">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'proteron-paineis' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+			<div class="row w-100 align-items-center g-0">
+
+				<div class="col-6 col-md-3">
+
+					<a href="<?php echo get_site_url(); ?>" class="header_logo d-flex justify-content-center">
+						<img src="<?php echo get_template_directory_uri() . '/assets/svg/logo.svg'; ?>" class="header_logo-image" alt="Logo da Proteron Painéis" />
+					</a>
+
+				</div>
+
+				<div class="col d-none d-md-block">
+
+					<?php
+						wp_nav_menu(array(
+							'theme_location'    => 'header-menu',
+							'depth'             => 2,
+							'container'         => 'nav',
+							'container_class'   => 'd-flex justify-content-end',
+							'container_id'      => 'bs-example-navbar-collapse',
+							'menu_class'        => 'nav',
+							'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+							'walker'            => new WP_Bootstrap_Navwalker(),
+						));
+					?>
+
+				</div>
+
+				<div class="col d-flex d-md-none justify-content-end">
+
+					<button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+						<img src="<?php echo get_template_directory_uri() . '/assets/svg/menu-mobile.svg'; ?>" alt="Logo da Proteron Painéis" />
+					</button>
+
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+						<div class="offcanvas-header">
+							<h5 id="offcanvasRightLabel">Offcanvas right</h5>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							...
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
 	</header><!-- #masthead -->

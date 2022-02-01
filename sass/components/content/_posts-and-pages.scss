@@ -21,3 +21,24 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.banner {
+	background-color: #E49323;
+	&_background{
+		&-image {
+			pointer-events: none;
+		}
+	}
+
+	&_box {
+		background-color: #ffffff;
+		margin: 108px 0 0;
+		padding: 36px 36px 72px;
+		position: relative;
+		z-index: 1000;
+
+		&-title {
+			font-size: 20px;
+		}
+	}
+}

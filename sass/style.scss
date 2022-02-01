@@ -50,6 +50,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
+/* Import Bootstrap
+--------------------------------------------- */
+@import "bootstrap/bootstrap";
+
+/* Import Palette
+--------------------------------------------- */
+@import "palette";
+
 // Import variables and mixins.
 @import "abstracts/abstracts";
 
@@ -100,14 +108,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
-
-/* Import Bootstrap
---------------------------------------------- */
-@import "bootstrap/bootstrap";
-
-/* Import Palette
---------------------------------------------- */
-@import "palette";
 
 
 
