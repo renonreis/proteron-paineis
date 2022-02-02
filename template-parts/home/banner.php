@@ -11,7 +11,7 @@
     </div>
   </div>
 
-  <div class="banner_background-image position-absolute top-50 end-0 translate-middle-y">
+  <div class="banner_background-image position-absolute top-50 end-0">
     <img src="<?php echo get_template_directory_uri() . '/assets/images/img-banner.jpg'; ?>" alt="">
   </div>
 </section>

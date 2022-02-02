@@ -10,5 +10,19 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+$heading__sizes: (70px, 52px, 36px, 24px, 16px, 16px);
+$heading__weights: (700, 400, 400, 400, 400, 400);
+$heading_transforms: (uppercase, none, none, none, none, none);
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-family:    $font__heading;
+    font-size:      nth($heading__sizes, $i);
+    font-weight:    nth($heading__weights, $i);
+    text-transform: nth($heading_transforms, $i);
+    color:          $color__text-main;
+	}
+}
+
 @import "headings";
 @import "copy";
