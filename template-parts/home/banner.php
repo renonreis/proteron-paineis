@@ -1,7 +1,7 @@
 <section id="banner" class="banner position-relative overflow-hidden">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-7 offset-md-1">
         <div class="banner_box">
           <h1 class="banner_box-title">PROTERON PAINÉIS</h1>
           <p class="banner_box-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>

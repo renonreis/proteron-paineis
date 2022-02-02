@@ -71,11 +71,25 @@
 
 					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 						<div class="offcanvas-header">
-							<h5 id="offcanvasRightLabel">Offcanvas right</h5>
+							<a id="offcanvasRightLabel" href="<?php echo get_site_url(); ?>" class="header_logo d-flex justify-content-center">
+								<img src="<?php echo get_template_directory_uri() . '/assets/svg/logo.svg'; ?>" class="header_logo-image" alt="Logo da Proteron Painéis" />
+							</a>
 							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 						</div>
 						<div class="offcanvas-body">
-							...
+
+							<?php
+								wp_nav_menu(array(
+									'theme_location'    => 'header-menu',
+									'depth'             => 2,
+									'container'         => 'nav',
+									'container_class'   => 'd-flex',
+									'container_id'      => 'bs-example-navbar-collapse',
+									'menu_class'        => 'nav flex-column',
+									'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+									'walker'            => new WP_Bootstrap_Navwalker(),
+								));
+							?>
 						</div>
 					</div>
 

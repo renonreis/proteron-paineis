@@ -11042,8 +11042,8 @@ optgroup,
 textarea {
 	color: #272525;
 	font-family: "Rubik", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
+	font-size: 0.875rem;
+	line-height: 18px;
 }
 
 h1, .h1 {
@@ -11419,6 +11419,14 @@ textarea {
 	padding: 12px 10px;
 }
 
+.header ul.nav {
+	margin: 0;
+}
+
+.header .offcanvas-body ul.nav a {
+	padding: 0.5rem 0;
+}
+
 @media (max-width: 575.98px) {
 	.header_logo-image {
 		max-width: 48px;
@@ -11520,6 +11528,95 @@ textarea {
 	.banner_background-image {
 		transform: translateY(-50%);
 		max-width: 60%;
+	}
+}
+
+.services {
+	padding: 48px 0 0;
+}
+
+.services-title {
+	margin-bottom: 36px;
+}
+
+.services_box {
+	margin-bottom: 48px;
+}
+
+.services_box-background-image {
+	margin-bottom: 10px;
+}
+
+.services_box-background-image img {
+	max-height: 200px;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.services_box_content-categories {
+	color: #DB5C16;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	margin: 0;
+}
+
+.about {
+	background-image: url(./assets/images/bg-about.png);
+	background-repeat: repeat no-repeat;
+	margin: 0 0 72px;
+}
+
+.about_background-image {
+	max-width: 970px;
+	width: 100%;
+}
+
+.about_background-image img {
+	max-height: 295px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.about_box {
+	background-color: #E49323;
+	margin: 216px 0 0;
+	padding: 36px 48px;
+	position: relative;
+	z-index: 1000;
+}
+
+.about_box-categories {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.about_box h2, .about_box .h2 {
+	color: #ffffff;
+}
+
+.about_box p {
+	color: #ffffff;
+	margin: 0;
+}
+
+@media (max-width: 767.98px) {
+	.about {
+		background-repeat: repeat repeat;
+	}
+	.about_background-image img {
+		min-height: 484px;
+		object-fit: cover;
+		width: 100%;
+	}
+	.about_box {
+		background-color: #E49323;
+		margin: 360px 0 36px;
 	}
 }
 
