@@ -11457,6 +11457,24 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
+.button {
+	border-radius: 7px;
+	font-size: 17px;
+	line-height: 20px;
+	padding: 18px 36px;
+	transition: all 0.3s;
+}
+
+.button.default {
+	background-color: #DB5C16;
+	color: #ffffff !important;
+}
+
+.button.default:hover {
+	background-color: #E49323;
+	color: #ffffff;
+}
+
 .banner {
 	background-color: #E49323;
 }
@@ -11492,21 +11510,6 @@ textarea {
 	font-size: 24px;
 	line-height: 28px;
 	max-width: 485px;
-}
-
-.banner_box-button {
-	background-color: #DB5C16;
-	border-radius: 7px;
-	color: #ffffff !important;
-	font-size: 17px;
-	line-height: 20px;
-	padding: 18px 36px;
-	transition: all 0.3s;
-}
-
-.banner_box-button:hover {
-	background-color: #E49323;
-	color: #ffffff;
 }
 
 @media (min-width: 768px) {

@@ -5,7 +5,7 @@
         <div class="banner_box">
           <h1 class="banner_box-title">PROTERON PAINÉIS</h1>
           <p class="banner_box-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-          <a href="" class="btn banner_box-button">Quero um orçamento</a>
+          <a href="" class="btn button default">Quero um orçamento</a>
         </div>
       </div>
     </div>
