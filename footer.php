@@ -12,19 +12,18 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'proteron-paineis' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'proteron-paineis' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'proteron-paineis' ), 'proteron-paineis', '<a href="https://ninho.digital/">Ninho Digital</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2><span>Entre em</span> Contato</h2>
+				</div>
+			</div>
+			<div class="row copyright">
+				<div class="col text-center">
+					<p>Copyright @ PROTERON 2021 Todos os direitos reservados</p>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
