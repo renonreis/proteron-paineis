@@ -10,4 +10,6 @@ get_template_part( 'template-parts/home/services' );
 
 get_template_part( 'template-parts/home/about' );
 
+get_template_part( 'template-parts/home/projects' );
+
 get_footer();

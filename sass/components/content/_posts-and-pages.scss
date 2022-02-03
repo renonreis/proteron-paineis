@@ -26,14 +26,34 @@
 	border-radius: 7px;
 	font-size: 17px;
 	line-height: 20px;
-	padding: 18px 36px;
+	padding: 16px 34px;
 	transition: all 0.3s;
 	&.default {
 		background-color: $primary;
+		border: 2px solid $primary;
 		color: $white !important;
 		&:hover {
 			background-color: $secondary;
+			border-color: $secondary;
 			color: $white;
+		}
+	}
+	&.outline {
+		border-color: $primary;
+		color: $primary !important;
+		&:hover {
+			background-color: $secondary;
+			border-color: $secondary;
+		}
+		&_light {
+			border-color: $white;
+			color: $white !important;
+			&:hover {
+				background-color: $white;
+				border-color: $white;
+				color: $secondary !important;
+			}
+
 		}
 	}
 }
@@ -169,10 +189,49 @@
 				width: 100%;
 			}
 		}
-
 		&_box {
 			background-color: $secondary;
 			margin: 360px 0 36px;
+		}
+	}
+}
+
+.projects {
+	&_box {
+		&-background-image {
+			height: 100%;
+			width: 100%;
+			img {
+				height: 100%;
+				object-fit: cover;
+				width: 100%;
+			}
+
+			&:before {
+				background-color: #1A1818;
+				content: '';
+				height: 100%;
+				opacity: 0.8;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+		}
+		&-materiais {
+			padding: 108px 15px 48px;
+		}
+		&-engenharia {
+			padding: 120px 15px 60px;
+		}
+		&-content {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			z-index: 1000;
+			img {
+				margin: 0 0 10px;
+			}
 		}
 	}
 }

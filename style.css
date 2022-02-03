@@ -11469,18 +11469,41 @@ textarea {
 	border-radius: 7px;
 	font-size: 17px;
 	line-height: 20px;
-	padding: 18px 36px;
+	padding: 16px 34px;
 	transition: all 0.3s;
 }
 
 .button.default {
 	background-color: #DB5C16;
+	border: 2px solid #DB5C16;
 	color: #ffffff !important;
 }
 
 .button.default:hover {
 	background-color: #E49323;
+	border-color: #E49323;
 	color: #ffffff;
+}
+
+.button.outline {
+	border-color: #DB5C16;
+	color: #DB5C16 !important;
+}
+
+.button.outline:hover {
+	background-color: #E49323;
+	border-color: #E49323;
+}
+
+.button.outline_light {
+	border-color: #ffffff;
+	color: #ffffff !important;
+}
+
+.button.outline_light:hover {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	color: #E49323 !important;
 }
 
 .banner {
@@ -11618,6 +11641,47 @@ textarea {
 		background-color: #E49323;
 		margin: 360px 0 36px;
 	}
+}
+
+.projects_box-background-image {
+	height: 100%;
+	width: 100%;
+}
+
+.projects_box-background-image img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.projects_box-background-image:before {
+	background-color: #1A1818;
+	content: '';
+	height: 100%;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.projects_box-materiais {
+	padding: 108px 15px 48px;
+}
+
+.projects_box-engenharia {
+	padding: 120px 15px 60px;
+}
+
+.projects_box-content {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 1000;
+}
+
+.projects_box-content img {
+	margin: 0 0 10px;
 }
 
 /* Comments
