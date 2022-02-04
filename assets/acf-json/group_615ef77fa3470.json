@@ -38,25 +38,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_61b60aa0f3c75",
-            "label": "Telefone",
-            "name": "telefone",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "(12) 3456-7890",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_61b60ac8f3c76",
             "label": "E-mail",
             "name": "email",
@@ -76,23 +57,22 @@
             "maxlength": ""
         },
         {
-            "key": "field_61b60adaf3c77",
+            "key": "field_61fc547c1975e",
             "label": "Endereço",
-            "name": "endereco",
-            "type": "text",
+            "name": "address",
+            "type": "google_map",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "Rua Vicente Machado, 1645 apto 17, Centro, CEP 85812-150 - Cascavel PR",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": 17,
+            "height": 485
         },
         {
             "key": "field_615ef8714771d",
@@ -123,26 +103,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor.",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_615ef8764771e",
-            "label": "Copyright",
-            "name": "copyright",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "© All Rights Reserved 2021 - LaVenia.",
+            "default_value": "Copyright @ PROTERON 2021 Todos os direitos reservados",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -167,5 +128,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639320695
+    "modified": 1643926708
 }

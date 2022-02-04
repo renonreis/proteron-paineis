@@ -183,6 +183,7 @@
 		background-repeat: repeat repeat;
 
 		&_background-image {
+			max-width: 100%;
 			img {
 				min-height: 484px;
 				object-fit: cover;
@@ -197,10 +198,12 @@
 }
 
 .projects {
+	margin-bottom: -12px;
 	&_box {
 		&-background-image {
 			height: 100%;
 			width: 100%;
+			z-index: 1000;
 			img {
 				height: 100%;
 				object-fit: cover;

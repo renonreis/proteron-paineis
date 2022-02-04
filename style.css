@@ -11439,6 +11439,142 @@ textarea {
 
 /* Footer
 --------------------------------------------- */
+.footer-informations {
+	background-image: url(./assets/images/bg-about.png);
+	background-size: contain;
+	margin: 0 0 204px;
+}
+
+.footer-box {
+	padding: 60px 12px 18px;
+}
+
+.footer-box_title {
+	color: #ffffff;
+}
+
+.footer-box_title span {
+	display: block;
+	font-family: "Rubik", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.footer-box_mail, .footer-box_whatsapp {
+	color: #ffffff !important;
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 12px;
+	text-decoration: none;
+}
+
+.footer-box_mail svg, .footer-box_whatsapp svg {
+	margin: 0 12px 0 0;
+}
+
+.footer-contacts {
+	bottom: -204px;
+	padding: 30px 0 0;
+	position: absolute;
+	z-index: 1500;
+}
+
+.footer-contacts_form {
+	background-color: #272525;
+	bottom: -204px;
+	max-width: 58%;
+	padding: 36px 12px 24px;
+	position: absolute;
+	z-index: 1600;
+}
+
+.footer-contacts_form form {
+	max-width: 600px;
+	position: relative;
+}
+
+.footer-contacts_form form .wpcf7-form-control-wrap {
+	display: block;
+	margin: 0 0 18px;
+}
+
+.footer-contacts_form form .wpcf7-form-control {
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 12px 18px;
+	width: 100%;
+}
+
+.footer-contacts_form form .wpcf7-acceptance {
+	border: 0;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 0;
+}
+
+.footer-contacts_form form .wpcf7-acceptance .wpcf7-list-item {
+	margin: 0;
+}
+
+.footer-contacts_form form .wpcf7-acceptance label {
+	align-items: center;
+	display: flex;
+}
+
+.footer-contacts_form form .wpcf7-acceptance label input {
+	margin: 0 12px 0 0;
+}
+
+.footer-contacts_form form .wpcf7-spinner {
+	display: none;
+}
+
+.footer-contacts_form form .wpcf7-textarea {
+	max-height: 125px;
+}
+
+.footer-contacts_form form .wpcf7-not-valid-tip {
+	position: absolute;
+}
+
+.footer-contacts_form form .wpcf7-response-output {
+	animation: hideAnimation 0s ease-in 3s;
+	animation-fill-mode: forwards;
+	background: #ffffff;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	max-width: 40%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.footer-contacts_form form .wpcf7-submit {
+	background-color: #DB5C16;
+	border-color: #DB5C16;
+	border-radius: 60px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.footer-contacts_form form .wpcf7-submit:hover {
+	background-color: #E49323;
+	border-color: #E49323;
+}
+
+.footer-contacts ul.nav {
+	margin: 0 0 0 0;
+}
+
 .copyright {
 	padding: 35px 0;
 }
@@ -11446,6 +11582,43 @@ textarea {
 .copyright p {
 	color: #DB5C16;
 	margin: 0 0 0;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	animation: hideAnimation 0s ease-in 3s;
+	animation-fill-mode: forwards;
+	display: none;
+}
+
+@keyframes hideAnimation {
+	to {
+		display: none;
+		height: 0;
+		pointer-events: none;
+		visibility: hidden;
+		width: 0;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.footer-informations {
+		margin: 0;
+	}
+	.footer-contacts_form {
+		bottom: initial;
+		max-width: 100%;
+		padding: 36px 12px;
+		position: relative;
+	}
+	.footer-contacts {
+		position: relative;
+		bottom: initial;
+	}
+	.copyright p {
+		font-size: 11px;
+	}
 }
 
 /* Posts and pages
@@ -11641,6 +11814,9 @@ textarea {
 	.about {
 		background-repeat: repeat repeat;
 	}
+	.about_background-image {
+		max-width: 100%;
+	}
 	.about_background-image img {
 		min-height: 484px;
 		object-fit: cover;
@@ -11652,9 +11828,14 @@ textarea {
 	}
 }
 
+.projects {
+	margin-bottom: -12px;
+}
+
 .projects_box-background-image {
 	height: 100%;
 	width: 100%;
+	z-index: 1000;
 }
 
 .projects_box-background-image img {
