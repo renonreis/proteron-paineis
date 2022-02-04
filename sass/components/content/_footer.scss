@@ -166,3 +166,11 @@
     }
   }
 }
+
+@include media-breakpoint-up(lg) {
+  .footer {
+    form {
+      max-width: 95%;
+    }
+  }
+}
