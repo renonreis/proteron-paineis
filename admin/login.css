@@ -7,7 +7,7 @@
 }
 
 .login h1 a {
-	background-image: url(./../assets/img/logo-lavenia.png);
+	background-image: url(./../assets/svg/logo-dark.svg);
 	background-position: center;
 	background-size: auto;
 	width: 100%;
@@ -15,22 +15,22 @@
 
 .login input[type="text"]:focus,
 .login input[type="password"]:focus {
-	border-color: #0A92E0;
-	box-shadow: 0 0 0 1px #0A92E0;
+	border-color: #DB5C16;
+	box-shadow: 0 0 0 1px #DB5C16;
 }
 
 .login .button.wp-hide-pw .dashicons {
-	color: #0A92E0;
+	color: #DB5C16;
 }
 
 .login .button-primary {
-	background: #0A92E0;
-	border-color: #0A92E0;
+	background: #DB5C16;
+	border-color: #DB5C16;
 }
 
 .login .button-primary:hover {
-	background: #0A92E0;
-	border-color: #0A92E0;
+	background: #DB5C16;
+	border-color: #DB5C16;
 }
 
 p#nav a,
