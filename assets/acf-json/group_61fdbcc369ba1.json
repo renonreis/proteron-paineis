@@ -1,11 +1,11 @@
 {
-    "key": "group_61f877cfb8e90",
-    "title": "Banner",
+    "key": "group_61fdbcc369ba1",
+    "title": "Quem Somos",
     "fields": [
         {
-            "key": "field_61fdb57d11394",
-            "label": "Contéudo",
-            "name": "content_banner",
+            "key": "field_61fdbcc97e197",
+            "label": "Conteudo",
+            "name": "about_content",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -18,9 +18,9 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_61fdb1f69682b",
+                    "key": "field_61fdbce37e198",
                     "label": "Titulo",
-                    "name": "banner_title",
+                    "name": "about_title",
                     "type": "text",
                     "instructions": "",
                     "required": 1,
@@ -30,16 +30,16 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "PROTERON PAINÉIS",
+                    "default_value": "Um pouco sobre",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_61fdb22c9682c",
-                    "label": "Subtitulo",
-                    "name": "banner_subtitle",
+                    "key": "field_61fdbcfe7e199",
+                    "label": "Subtítulo",
+                    "name": "about_subtitle",
                     "type": "text",
                     "instructions": "",
                     "required": 1,
@@ -49,17 +49,17 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.",
+                    "default_value": "História",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_61fdb25d9682e",
-                    "label": "Texto do Botão",
-                    "name": "banner_button_text",
-                    "type": "text",
+                    "key": "field_61fdbd187e19a",
+                    "label": "Descrição",
+                    "name": "about_description",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
@@ -68,40 +68,21 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Quero um orçamento",
+                    "default_value": "A Proteron é uma Construtora e Incorporadora que atua no mercado desde 2015, planejando e executando projetos de qualidade. Desde então a empresa já projetou e concretizou obras públicas e privadas no estado do Paraná e Santa Catarina. Especializada em obras industriais, comerciais e hospitalares, a Proteron trabalha tanto na execução quanto no gerenciamento e fiscalização de projetos.",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_61fdb24a9682d",
-                    "label": "Link do Botão",
-                    "name": "banner_button_link",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "#contato",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": 500,
+                    "rows": 5,
+                    "new_lines": ""
                 }
             ]
         },
         {
-            "key": "field_61fdb5b911395",
+            "key": "field_61fdbd427e19b",
             "label": "Imagem de Fundo",
-            "name": "banner_background_image",
+            "name": "about_background_image",
             "type": "image",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "40",
@@ -123,7 +104,7 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "post_template",
                 "operator": "==",
                 "value": "page\/home.php"
             }
@@ -134,20 +115,9 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content",
-        "excerpt",
-        "discussion",
-        "comments",
-        "revisions",
-        "format",
-        "featured_image",
-        "categories",
-        "tags",
-        "send-trackbacks"
-    ],
+    "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644017108
+    "modified": 1644019042
 }

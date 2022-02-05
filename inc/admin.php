@@ -125,3 +125,13 @@ function yoasttobottom() {
 	return 'low';
 }
 add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+
+// DISABLE GUTENBERG ON HOMEPAGE
+function my_disable_gutenberg( $can_edit, $post ) {
+  if( $post->post_type === 'page' && ($post->post_name !== 'home') ) {
+    return true;
+  }
+
+  return false;
+}
+add_filter( 'use_block_editor_for_post', 'my_disable_gutenberg', 10, 2 );

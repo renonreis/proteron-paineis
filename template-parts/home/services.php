@@ -3,35 +3,29 @@
 
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="services-title">Nossos Serviços</h2>
+        <h2 class="services-title"><?php the_field('services_title'); ?></h2>
       </div>
-      <div class="col-md-6">
-        <div class="services_box">
-          <div class="services_box-background-image">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/img-banner.jpg'; ?>" alt="">
-          </div>
-          <div class="services_box_content">
-            <p class="services_box_content-categories">Lorem</p>
-            <h2 class="services_box_content-title">Ipsum</h2>
-            <p class="services_box_content-description">Somos uma construtora em Curitiba com know-how em instalações elétricas industriais, instalações elétricas prediais e instalações elétricas hospitalares. Nossos serviços são desempenhados para garantir durabilidade, economia e segurança das construções, tudo com alta tecnologia, profissionalismo e cumprimento de prazos.</p>
-            <a href="" class="btn button default">Quero um orçamento</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="services_box">
-          <div class="services_box-background-image">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/img-banner.jpg'; ?>" alt="">
-          </div>
-          <div class="services_box_content">
-            <p class="services_box_content-categories">Lorem</p>
-            <h2 class="services_box_content-title">Ipsum</h2>
-            <p class="services_box_content-description">Somos uma construtora em Curitiba com know-how em instalações elétricas industriais, instalações elétricas prediais e instalações elétricas hospitalares. Nossos serviços são desempenhados para garantir durabilidade, economia e segurança das construções, tudo com alta tecnologia, profissionalismo e cumprimento de prazos.</p>
-            <a href="" class="btn button default">Quero um orçamento</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
+      <?php
+        if( have_rows('services_list') ):
+          while( have_rows('services_list') ) : the_row();
+      ?>
+        <div class="col-md-6">
+          <div class="services_box">
+            <div class="services_box-background-image">
+              <img src="<?php echo get_sub_field('service_background_image'); ?>" alt="">
+            </div>
+            <div class="services_box_content">
+              <p class="services_box_content-categories"><?php echo get_sub_field('service_category'); ?></p>
+              <h2 class="services_box_content-title"><?php echo get_sub_field('service_title'); ?></h2>
+              <p class="services_box_content-description"><?php echo get_sub_field('service_description'); ?></p>
+              <a href="<?php echo get_sub_field('service_button_link'); ?>" class="btn button default"><?php echo get_sub_field('service_button_text'); ?></a>
+            </div>
+          </div>
+        </div>
+      <?php
+          endwhile;
+        endif;
+      ?>
   </div>
 </section>

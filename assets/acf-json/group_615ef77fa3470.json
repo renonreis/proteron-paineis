@@ -38,6 +38,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_61fdd4f225fdd",
+            "label": "WhatsApp Link",
+            "name": "whatsapp_link",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/web.whatsapp.com\/send?phone=554130764200",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61b60ac8f3c76",
             "label": "E-mail",
             "name": "email",
@@ -128,5 +147,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643926708
+    "modified": 1644025142
 }
